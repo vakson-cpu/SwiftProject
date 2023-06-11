@@ -13,20 +13,33 @@ struct Home: View {
     }
     
     @StateObject var menuData = MenuViewModel()
+    @Namespace private var animation
+
     var body: some View {
         HStack(spacing:0){
             
             //Drawer
-            Drawer()
+            Drawer(animation:animation)
             //Main View
             
             
-            TabView{
-                Text("Home")
+            TabView(selection: $menuData.selectedMenu){
+                Profile().tag("Profile")
+                Account().tag("Account")
+                HomeScreen().tag("Home")
+                Registration().tag("Registration")
             }.frame(width: UIScreen.main.bounds.width)
         }.frame(width: UIScreen.main.bounds.width)
-            .offset(x:125)
-        
+            .offset(x: menuData.showerDrawer ?  125 : -125)
+            .overlay(
+                
+                ZStack{
+                    if !menuData.showerDrawer{
+                        DrawerCloseButton(animation:animation)
+                            .padding()
+                    }
+                },alignment: .topLeading
+                    )
             .environmentObject(menuData)
     }
 }

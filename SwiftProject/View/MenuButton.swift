@@ -12,7 +12,11 @@ struct MenuButton: View {
     var image: String
     @Binding var selectedMenu:String
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            withAnimation(.spring()){
+                selectedMenu = name
+            }
+        }, label: {
             HStack(spacing:15){
                 Image(systemName: image)
                     .font(.title2)

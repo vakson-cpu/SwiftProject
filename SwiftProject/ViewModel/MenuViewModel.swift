@@ -7,7 +7,9 @@
 import SwiftUI
 
 class MenuViewModel:ObservableObject{
-    @Published var selectedMenu = "Catalogue"
+    @Published var selectedMenu = "Home"
+    
+    @Published var showerDrawer = false
 }
 
 

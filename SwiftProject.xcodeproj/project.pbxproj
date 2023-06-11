@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8427C6982A360ACB0017DB6E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C6972A360ACB0017DB6E /* Profile.swift */; };
+		8427C69A2A360B110017DB6E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C6992A360B110017DB6E /* Account.swift */; };
+		8427C69C2A360FBB0017DB6E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C69B2A360FBB0017DB6E /* HomeScreen.swift */; };
+		8427C69E2A3614780017DB6E /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427C69D2A3614780017DB6E /* Registration.swift */; };
 		848071AB2A35D12000720084 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848071AA2A35D12000720084 /* MenuButton.swift */; };
 		848071AE2A35D2E700720084 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848071AD2A35D2E700720084 /* MenuViewModel.swift */; };
 		848071B02A35D50300720084 /* burgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 848071AF2A35D50300720084 /* burgerIcon.png */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8427C6972A360ACB0017DB6E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		8427C6992A360B110017DB6E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		8427C69B2A360FBB0017DB6E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		8427C69D2A3614780017DB6E /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		848071AA2A35D12000720084 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		848071AD2A35D2E700720084 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		848071AF2A35D50300720084 /* burgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = burgerIcon.png; path = ../../burgerIcon.png; sourceTree = "<group>"; };
@@ -46,6 +54,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8427C6962A360A410017DB6E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8427C6972A360ACB0017DB6E /* Profile.swift */,
+				8427C6992A360B110017DB6E /* Account.swift */,
+				8427C69B2A360FBB0017DB6E /* HomeScreen.swift */,
+				8427C69D2A3614780017DB6E /* Registration.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		848071AC2A35D24900720084 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +124,7 @@
 		8482F3A02A34EAC600161CC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8427C6962A360A410017DB6E /* Screens */,
 				8482F3A12A34EAD700161CC8 /* Home.swift */,
 				848071AA2A35D12000720084 /* MenuButton.swift */,
 				8482F3A32A34EAF400161CC8 /* Drawer.swift */,
@@ -185,9 +205,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8482F3A42A34EAF400161CC8 /* Drawer.swift in Sources */,
+				8427C69E2A3614780017DB6E /* Registration.swift in Sources */,
+				8427C6982A360ACB0017DB6E /* Profile.swift in Sources */,
 				8482F3952A34EA8B00161CC8 /* ContentView.swift in Sources */,
 				848071B32A35DD2B00720084 /* ColorPicker.swift in Sources */,
 				848071AB2A35D12000720084 /* MenuButton.swift in Sources */,
+				8427C69A2A360B110017DB6E /* Account.swift in Sources */,
+				8427C69C2A360FBB0017DB6E /* HomeScreen.swift in Sources */,
 				848071AE2A35D2E700720084 /* MenuViewModel.swift in Sources */,
 				8482F3A22A34EAD700161CC8 /* Home.swift in Sources */,
 				8482F3932A34EA8B00161CC8 /* SwiftProjectApp.swift in Sources */,
