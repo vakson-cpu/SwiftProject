@@ -39,6 +39,7 @@ struct Drawer: View {
                 MenuButton(name:"Profile",image:"circle",selectedMenu: $menuData.selectedMenu )
                 MenuButton(name:"Account",image:"person",selectedMenu: $menuData.selectedMenu )
                 MenuButton(name:"Registration",image:"person",selectedMenu: $menuData.selectedMenu )
+                MenuButton(name:"Login",image:"person",selectedMenu: $menuData.selectedMenu )
             }.padding(.top,15)
             Divider().background(Color.white)
                 .padding(.horizontal,25)

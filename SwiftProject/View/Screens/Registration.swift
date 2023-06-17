@@ -43,7 +43,7 @@ struct Registration: View {
                 
                 Button(action: {
                     // Perform form submission or validation here
-                    submitForm()
+                    fetch()
                 }) {
                     Text("Submit")
                         .foregroundColor(.white)
@@ -60,8 +60,34 @@ struct Registration: View {
         }.navigationTitle("Registration")
     }
 
+//
+    func fetch() {
+        var responseText = ""
+        print("Here")
+        guard let url = URL(string: "https://localhost:7172/api/User/Test") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else {
+                if let error = error {
+                    print("Error: \(error)")
+                }
+                return
+            }
+            
+            if let responseString = String(data: data, encoding: .utf8) {
+                DispatchQueue.main.async {
+                    responseText = responseString
+                }
+                print(responseText)
 
-
+            }
+            print(responseText)
+        }
+        
+        task.resume()
+    }
 func submitForm() {
       // Perform form submission or validation logic here
       print("Name: \(name)")

@@ -28,6 +28,8 @@ struct Home: View {
                 Account().tag("Account")
                 HomeScreen().tag("Home")
                 Registration().tag("Registration")
+                Login().tag("Login")
+
             }.frame(width: UIScreen.main.bounds.width)
         }.frame(width: UIScreen.main.bounds.width)
             .offset(x: menuData.showerDrawer ?  125 : -125)
