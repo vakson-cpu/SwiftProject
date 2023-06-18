@@ -32,13 +32,14 @@ struct Home: View {
 
             }.frame(width: UIScreen.main.bounds.width)
         }.frame(width: UIScreen.main.bounds.width)
-            .offset(x: menuData.showerDrawer ?  125 : -125)
+            .offset(x: menuData.showerDrawer ?  150 : -150)
             .overlay(
                 
                 ZStack{
                     if !menuData.showerDrawer{
                         DrawerCloseButton(animation:animation)
-                            .padding()
+                            .zIndex(10)
+                            .padding(20)
                     }
                 },alignment: .topLeading
                     )

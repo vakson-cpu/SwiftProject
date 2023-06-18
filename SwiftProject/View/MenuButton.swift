@@ -20,14 +20,14 @@ struct MenuButton: View {
             HStack(spacing:15){
                 Image(systemName: image)
                     .font(.title2)
-                    .foregroundColor(selectedMenu == name ? .black : .white)
+                    .foregroundColor(selectedMenu == name ? .white : .black)
                 Text(name)
-                    .foregroundColor(selectedMenu == name ? .black : .white)
+                    .foregroundColor(selectedMenu == name ? .white : .black)
             }
             .padding(.horizontal)
             .padding(.vertical,12)
             .frame(width:200,alignment: .leading)
-            .background(Color.white.opacity(selectedMenu == name ? 1 : 0))
+            .background(Color("themeBackground").opacity(selectedMenu == name ? 1 : 0))
             .cornerRadius(10)
         })
     }
